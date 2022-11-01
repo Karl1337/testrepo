@@ -1,0 +1,377 @@
+\documentclass[12pt,a4paper]{article}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage[arrow, matrix, curve]{xy}
+\usepackage{amsthm}
+\usepackage[top=3cm,left=4cm,right=2cm,bottom=3.5cm]{geometry}
+\usepackage{todonotes}
+\usepackage{graphicx}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue]{hyperref}
+\usepackage{float}
+\usepackage{dsfont}
+\usepackage{subfigure}
+\usepackage{fancyhdr}
+\usepackage{a4wide}
+\usepackage{braket}
+\usepackage{cite}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage[noend]{algpseudocode}
+\usepackage{algorithm}
+\usepackage{authblk}
+\renewcommand\Affilfont{\small}
+\DeclareMathOperator{\diam}{diam}
+
+
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\includegraphics[height=.13\textheight]{Logo_uni} \\[5pt]
+{\large\text{Fachbereich Mathematik \& Informatik}}  \\[5pt]
+{\large\text{Dein Name}}   \\[10pt]
+{\large Wintersemester XXXX} \\[1cm]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\large{Master-Arbeit zum Thema}} \\[10pt]
+	{\Large\textbf{Vorlage für eine Abschlussarbeit}}\\[1cm]
+\begin{tabular}[l]{ll}
+{\large Betreuer:} & {\large Prof. Dr. C. Komusiewicz}\\
+{\large Zweitgutachter:} & {\large XXXXXXXXXXXXXX}
+\end{tabular}
+\end{center}
+
+	
+\vfill
+\begin{tabular}[l]{ll}
+Name:           & XXXXX\\
+Matrikelnummer: & XXXXX\\
+Studiengang:    & XXXXX\\
+Email: & XXXXX\\
+Datum der Abgabe: & XXXXX \\
+\end{tabular}
+\end{titlepage}
+
+\section*{Selbstständigkeitserklärung}
+Hier versicherst du, dass du die Arbeit selbst geschrieben hast.
+
+\section*{Zusammenfassung}
+Hier steht auf etwa einer halben Seite eine grobe Beschreibung des Themas sowie eine kurze Zusammenfassung der wichtigsten Ergebnisse. 
+Falls die Abschlussarbeit in Englisch geschrieben wird, so muss sowohl eine Zusammenfassung als auch ein Abstract geschrieben werden.
+
+\section*{Danksagung}
+Eine Danksagung muss nicht geschrieben werden, kann aber gerne angefertigt werden.
+
+
+
+
+
+\newgeometry{
+  left=4cm,
+  right=2cm,
+  top=3cm,
+  bottom=3.5cm,
+  bindingoffset=5mm
+}
+\begin{verbatim}
+\newgeometry{
+  left=4cm,
+  right=2cm,
+  top=3cm,
+  bottom=3.5cm,
+  bindingoffset=5mm
+}
+\end{verbatim}
+Mit diesem Befehl können die Seitenränder angepasst werden.
+
+
+\pagenumbering{Roman}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead{} 
+\fancyhead[R]{\thepage}
+
+\begin{verbatim}
+\pagenumbering{Roman}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead{} 
+\fancyhead[R]{\thepage}
+\end{verbatim}
+Mit diesem Befehl werden Seiten nun römisch nummeriert und es gibt eine Kopfzeile.
+
+
+\newpage
+\pagestyle{empty}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}    
+\pagestyle{fancy}
+\makeatletter
+\renewcommand{\sectionmark}[1]{\markright{\thesection .~~#1}}
+\makeatother
+
+\begin{verbatim}
+\newpage
+\pagestyle{empty}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}    
+\pagestyle{fancy}
+\makeatletter
+\renewcommand{\sectionmark}[1]{\markright{\thesection .~~#1}}
+\makeatother
+\end{verbatim}
+
+Mit diesen Befehlen wird ein Inhaltsverzeichnis erstellt. 
+Dabei werden alle Seiten bis zum Inhaltsverzeichnis mit römischen Zahlen nummeriert und alle Seiten danach mit arabischen.
+
+
+
+\fancyhead[L]{\itshape\nouppercase  \rightmark}
+\fancyhead[R]{\thepage}
+\begin{verbatim}
+\fancyhead[L]{\itshape\nouppercase  \rightmark}
+\fancyhead[R]{\thepage}
+\end{verbatim}
+Hiermit erscheinen die Seitennummern oben rechts.
+
+
+\section{Einleitung}
+In dieser Section motivierst du deine Aufgabenstellung und beschreibst die relevanten Problemdefinitionen.
+
+\subsection{Bekannte Ergebnisse}
+Hier gibst du einen Überblick über relevante Ergebnisse der von dir untersuchten Probleme oder anderen verwandeten Problemen.
+
+\subsection{Eigene Ergebnisse}
+Hier gibst du eine Zusammenfassung deiner eigenen Ergebnisse.
+
+\subsection{Gliederung}
+Hier kannst du nochmal grob in jeweils einem Satz sagen in welcher Section du welche Ergebnisse beweist bzw. auswertest.
+
+
+\section{Grundlagen}
+In dieser Section fasst du alle relevanten Definitionen, Notationen und Problemdefinitionen zusammen.
+Dabei kann es sich anbieten jeweils eine Subsection für einzelne Gebiete zu machen. Beispiele sind:
+\begin{itemize}
+\item Graphnotaion
+\item Spezielle Graphen
+\item Eigenschaften von Graphen
+\item Komplexitätstheorie
+\item Parametrisierte Komplexität
+\end{itemize}
+
+
+\section{Hauptteil}
+In den folgenden Sections beweist du zunächst deine theoretischen Resultate. 
+Diese sollten passend in mehrere Sections aufgeteilt werden.
+Falls deine Abschlussarbeit Experimente umfasst, beschreibst du anschließend deine Implementierung und eventuelle Unterschiede der Implementerung zur Theorie.
+Anschließend wertest du deine Experimente aus.
+
+\subsection{Allgemeine Hinweise}
+  
+\begin{itemize}
+\item Wir empfehlen Latex zur Anfertigung des Manuskripts.
+\item Nutzen Sie gerade zu Beginn der Arbeit Ihre Manuskriptdatei als Notizzettel. Bauen Sie diesen dann Schritt für Schritt in ein fertiges Manuskript um.
+\item Es empfiehlt sich eine Itemize-Liste mit den bereits erzielten Ergebnissen und eine mit den Ideen für die noch zu untersuchenden Fragestellungen oder zu erledigenden Aufgaben im Manuskript anzulegen.
+\item Schreiben Sie Introduction, Conclusion und Abstract erst zum Schluss, aber sammeln
+  Sie durchgängig wichtige Fakten und Beobachtungen in den jeweils betroffenen
+  Abschnitten. Wenn Sie zum Beispiel eine interessante offene Frage haben, die Sie im
+  Laufe der Arbeit auf keinen Fall mehr bearbeiten wollen, dann notieren Sie diese in der Conclusion.
+\item Führen Sie den Leser durch Ihre Arbeit! Erklären Sie etwa zu Beginn einer Section,
+  was Sie hier zeigen und welche Struktur die Section hat.
+\end{itemize}
+\todo[inline]{Referenzen auf gute Latexwebseiten. Empfehlung für Pakete etc.} 
+
+\subsection{Latex, Mathematischer Text und Beweise}
+
+\begin{itemize}
+\item Zum Nachschlagen von Latexbefehlen für konkrete Symbole empfehlen wir \url{http://detexify.kirelabs.org}.
+\item Zur Bezeichnung von Berechnungsproblemen empfiehlt es sich, einen eigenen Schriftstil zu verwenden, etwa \texttt{\textbackslash{}textsc{}}, dann wäre die Bezeichnung also immer "`\textsc{Approximate Exact Cover}"' anstelle von "`Approximate Exact Cover"'.
+Außerdem sollten neu eingeführte Begriffe stets mit \texttt{\textbackslash{}emph{}} im Text hervorgehoben werden.
+\item Sätze sollten nie mit mathematischen Symbolen beginnen.
+\item Zeilenumbrüche direkt vor oder nach mathematischen Symbolen sollten wenn möglich
+  vermieden werden. Etwa sollte bei "`vertex~$v$"' nicht zwischen "`vertex"' und "`$v$"'
+  umgebrochen werden. In Latex verhindert man einen Umbruch mit "`$\sim$"'.
+\item Zur Notation eines mathematischen Operators, etwa $\diam(G)$ für den Durchmesser eines Graphen, kann man in Latex  \texttt{\textbackslash{}DeclareMathOperator\{\textbackslash{}diam\}\{diam\}} verwenden.  
+\item Bei längeren Beweisen sollten Sie die Beweisidee kurz informell erklären, bevor Sie
+  den Beweis detailliert beschreiben.
+\item   Mittels der folgenden Befehle können Sie Umgebungen für Theoreme, Lemmas, Definitionen und Reduktionsregeln erstellen.
+\begin{verbatim}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma} 
+\theoremstyle{definition}
+\newtheorem{defi}[theorem]{Definition}
+\newtheorem{reduc}{Reduction Rule}\numberwithin{reduc}{section} 
+\end{verbatim} 
+\item Für Pseudocode eignen sich folgende Pakete:
+\begin{verbatim}
+\usepackage[noend]{algpseudocode}
+\usepackage{algorithm}
+\end{verbatim}
+
+Sie können auch eigene Befehle dem Pseudocode hinzufügen.
+\begin{verbatim}
+\algnewcommand\AND{\textbf{and}\space}
+\algnewcommand\algorithmicforeach{\textbf{for each}}
+\algdef{S}[FOR]{ForEach}[1]{\algorithmicforeach\ #1\ \algorithmicdo}
+\algrenewcommand\algorithmicprocedure{\textbf{function}}
+\end{verbatim}
+\algnewcommand\AND{\textbf{and}\space}
+\algnewcommand\algorithmicforeach{\textbf{for each}}
+\algdef{S}[FOR]{ForEach}[1]{\algorithmicforeach\ #1\ \algorithmicdo}
+\algrenewcommand\algorithmicprocedure{\textbf{function}}
+
+Ein Beispiel ist folgender Code:
+\begin{verbatim}
+\begin{algorithm}[t]
+  \caption{An algorithm for finding a dominating clique~$S$. Vertex~$v_i$ is the first vertex of the dominating clique~$S$ in the fixed closure ordering~$\sigma$ of~$G$. Initially we have~$T:=\{v_i\}$.}
+  \label{algo-branching-dc}
+  \begin{algorithmic}[1]  
+  \Procedure{\textit{SolveDC}}{$G, k, T$} 
+  \State \algorithmicif\ $k=0$ \AND~$V(G)\neq N[T]$ \algorithmicthen\ \Return No \label{line-cdc-return-no}
+  \State \algorithmicif\ $V(G) = N[T]$ \algorithmicthen\ \Return Yes\label{line-cdc-yes}
+  \State Compute a vertex~$w$ such that~$v_iw\notin E(G)$ \label{line-cdc-compute-v-j}
+  \ForEach{$u\in \bigcap_{x\in T}N(x)\cap N(w)\cap V(G_i)$} \label{line-cdc-branch1} \Comment {$G_i:=G[v_i, \ldots , v_n]$}
+     \State \algorithmicif\ \textit{SolveDC}$(G - (N(u)\setminus N[v_i]), k - 1, T\cup\{u\})$ returns Yes \algorithmicthen\ \Return Yes \label{line-cdc-branch2}
+  \EndFor
+  \State \Return No
+  \EndProcedure
+  \end{algorithmic}
+\end{algorithm}
+\end{verbatim}
+\begin{algorithm}[t]
+  \caption{An algorithm for finding a dominating clique~$S$. Vertex~$v_i$ is the first vertex of the dominating clique~$S$ in the fixed closure ordering~$\sigma$ of~$G$. Initially we have~$T:=\{v_i\}$.}
+  \label{algo-branching-dc}
+  \begin{algorithmic}[1]  
+  \Procedure{\textit{SolveDC}}{$G, k, T$} 
+  \State \algorithmicif\ $k=0$ \AND~$V(G)\neq N[T]$ \algorithmicthen\ \Return No \label{line-cdc-return-no}
+  \State \algorithmicif\ $V(G) = N[T]$ \algorithmicthen\ \Return Yes\label{line-cdc-yes}
+  \State Compute a vertex~$w$ such that~$v_iw\notin E(G)$ \label{line-cdc-compute-v-j}
+  \ForEach{$u\in \bigcap_{x\in T}N(x)\cap N(w)\cap V(G_i)$} \label{line-cdc-branch1} \Comment {$G_i:=G[v_i, \ldots , v_n]$}
+     \State \algorithmicif\ \textit{SolveDC}$(G - (N(u)\setminus N[v_i]), k - 1, T\cup\{u\})$ returns Yes \algorithmicthen\ \Return Yes \label{line-cdc-branch2}
+  \EndFor
+  \State \Return No
+  \EndProcedure
+  \end{algorithmic}
+\end{algorithm}
+  
+  
+  
+\item Für Abbildungen, Pseudocode und Tabellen gilt die Daumenregel, dass sie am besten am oberen Seitenrand aufgehoben sind, da sie sonst den Textfluss stören. Dies wird mittels~$[t]$ erreicht (siehe dazu den Code der Figure). Zur Erstellung von Abbildungen kann man TikZ verwenden \url{http://mirrors.ctan.org/graphics/pgf/base/doc/pgfmanual.pdf}. Das Bild in Abbildung~\ref{fig:example} wird durch folgenden Code erzeugt.
+  \begin{quote}\small
+\begin{verbatim}
+\begin{figure}[t]
+  \centering
+  \begin{tikzpicture}[xscale=1.4,yscale=1.5]
+    
+    \tikzstyle{knoten}=[circle,fill=white,draw=black,thick,
+    minimum size=8pt,inner sep=0pt]
+    
+    \node[knoten,label=left:{$s$}] (a) at (0,1) {};
+    \node[knoten,label=left:{}] (b) at (0,0) {};
+    \node[knoten,label=below:{}] (c) at (1.3,0) {};
+    \node[knoten,label=below:{$t_1$}] (d) at (-1.3,-1) {};
+    \node[knoten,label=below:{$t_2$}] (e) at (0,-1)	 {};
+    \node[knoten,label=below:{$t_3$}] (f) at (1.3,-1)	 {};	
+    \draw[->, line width=2.5pt] (a) edge  node[right] {$6$} (b);
+    \draw[->, line width=1pt,bend left] (a) edge  node[above] {$2$} (c);
+    \draw[->, line width=1pt, bend right] (a) edge  node[left] {$6$} (d);
+    \draw[->, line width=2.5pt] (b) edge  node[above] {$1$} (d);
+    \draw[->, line width=2.5pt] (b) edge  node[left] {$2$} (e);
+    \draw[->, line width=1pt] (c) edge  node[right] {$2$} (f);
+   \end{tikzpicture}
+   \caption{Eine mit TikZ erzeugte Abbildung.}
+   \label{fig:example}
+\end{figure}
+\end{verbatim}
+  \end{quote}
+\end{itemize}
+\begin{figure}[t]
+  \centering
+  \begin{tikzpicture}[xscale=1.4,yscale=1.5]
+    
+    \tikzstyle{knoten}=[circle,fill=white,draw=black,thick,minimum size=8pt,inner sep=0pt]
+    
+    \node[knoten,label=left:{$s$}] (a) at (0,1) {};
+    \node[knoten,label=left:{}] (b) at (0,0) {};
+    \node[knoten,label=below:{}] (c) at (1.3,0) {};
+    \node[knoten,label=below:{$t_1$}] (d) at (-1.3,-1) {};
+    \node[knoten,label=below:{$t_2$}] (e) at (0,-1)	 {};
+    \node[knoten,label=below:{$t_3$}] (f) at (1.3,-1)	 {};	
+    \draw[->, line width=2.5pt] (a) edge  node[right] {$6$} (b);
+    \draw[->, line width=1pt,bend left] (a) edge  node[above] {$2$} (c);
+    \draw[->, line width=1pt, bend right] (a) edge  node[left] {$6$} (d);
+    \draw[->, line width=2.5pt] (b) edge  node[above] {$1$} (d);
+    \draw[->, line width=2.5pt] (b) edge  node[left] {$2$} (e);
+    \draw[->, line width=1pt] (c) edge  node[right] {$2$} (f);
+    \end{tikzpicture}
+    
+    \caption{Eine mit TikZ erzeugte Abbildung.}
+    \label{fig:example}
+  \end{figure}
+
+\subsection{Literaturangaben und Literaturrecherche}
+
+\begin{itemize}
+\item In Latex sollte Bibtex genutzt werden, dazu werden die bibliographischen Daten in
+  einer .bib-Datei gespeichert.
+\item Die wichtigsten Literaturdatenbanken für uns sind DBLP und Google Scholar.
+\item Google Scholar hat größeren Umfang und erlaubt es, in der Menge der zitierenden
+  Artikel zu Suchen. Bei DBLP hat man einen systematischeren Überblick über die Arbeiten eines einzelnen Autoren, sieht besser die verschiedenen Varianten eines Artikels (Konferenz- und Journalversion) und die .bib-Einträge haben höhere Qualität.
+\item Sammeln Sie alle gefunden relevanten bibliographischen Daten durchgängig in Ihrem
+  Manuskript, nicht erst am Ende der Bearbeitungszeit. Notieren Sie sich eventuell kurz in
+  einer eigenen Section zu jedem gefundenen Papier, was darin steht und zitieren Sie es,
+  damit es schon in der Literaturliste auftaucht.
+\item Die Referenzen sollten im Stil einheitlich sein. Etwa sollten Journalnamen entweder durchgängig ausgeschrieben oder durchgängig abgekürzt sein. Im folgenden befindet sich ein beispielhafter bib-Einträge für einen Konferenzartikel, in einem von uns empfohlenen Stil.
+  \begin{quote}
+    \texttt{@inproceedings\{MV80,\\
+  \quad author    = \{Silvio Micali and
+               Vijay V. Vazirani\},\\
+  \quad title     = \{An \$\{O(\textbackslash{}sqrt\{|V|\}|E|)\}\$ Algorithm
+               for Finding Maximum Matching in General Graphs\},\\
+  \quad booktitle = \{Proceedings of the 21st Annual Symposium on Foundations of Computer Science (FOCS$\sim$'80)\},\\
+  \quad pages     = \{17--27\},\\
+  \quad publisher = \{\{IEEE\} Computer Society\},\\
+  year      = 1980,\\
+  \}
+}
+  \end{quote}
+\item Man sollte vermeiden, Zitate als Satzteile zu verwenden. Also nicht
+  \begin{quote}
+    \texttt{In$\sim$\textbackslash{}cite\{MV80\} it was shown that a maximum matching\\ can be computed
+    in \$\{O(\textbackslash{}sqrt\{|V|\}|E|)\}\$$\sim$time.}
+  \end{quote}
+  sondern eher
+  \begin{quote}
+    \texttt{A maximum matching can be computed\\
+    in \$\{O(\textbackslash{}sqrt\{|V|\}|E|)\}\$$\sim$time$\sim$\textbackslash{}cite\{MV80\}.}
+  \end{quote}  
+\end{itemize}
+
+\subsection{Stilistische Empfehlungen}
+\begin{itemize}
+\item Wenn Sie einem Objekt eine Bezeichnung gegeben haben, dann verwenden Sie diese Bezeichnung durchgängig und versuchen Sie hier nicht sprachlich zu variieren (das verwirrt den Leser nur).
+\item Schreiben Sie "`for example"' anstelle von "`e.g."' und "`,that is,"' anstelle von "`,i.e.,"'.
+  
+\end{itemize}
+
+
+
+\section{Zusammenfassung und Ausblick} 
+Hier fasst du nochmals grob deine Ergebnisse zusammen.
+Außerdem nennst du einige offene Fragen, die noch interessant sind.
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
