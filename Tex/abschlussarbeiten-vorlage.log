@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.26)  1 NOV 2022 17:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.26)  2 NOV 2022 10:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -965,7 +965,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.77 }
+l.79 }
        [1]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
@@ -1029,18 +1029,18 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.162 \item K
+l.164 \item K
              omplexitätstheorie [1]
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 186.
+ine 188.
 LaTeX Font Info:    Trying to load font information for OMS+cmtt on input line 
-192.
-LaTeX Font Info:    No file OMScmtt.fd. on input line 192.
+194.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 194.
 
 
 LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbackslash' on input line 192.
+(Font)              for symbol `textbackslash' on input line 194.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1051,63 +1051,63 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [2]
-Overfull \hbox (2.42815pt too wide) in paragraph at lines 198--199
+Overfull \hbox (2.42815pt too wide) in paragraph at lines 200--201
 []\OT1/cmr/m/n/12 Zur No-ta-ti-on ei-nes ma-the-ma-ti-schen Ope-ra-tors, et-wa 
 $[](\OML/cmm/m/it/12 G\OT1/cmr/m/n/12 )$ f[]ur den Durch-
  []
 
 
-Overfull \hbox (30.16597pt too wide) in paragraph at lines 198--199
+Overfull \hbox (30.16597pt too wide) in paragraph at lines 200--201
 \OT1/cmr/m/n/12 mes-ser ei-nes Gra-phen, kann man in La-tex \OMS/cmtt/m/n/12 n\
 OT1/cmtt/m/n/12 DeclareMathOperator\OMS/cmtt/m/n/12 fn\OT1/cmtt/m/n/12 diam\OMS
 /cmtt/m/n/12 gf\OT1/cmtt/m/n/12 diam\OMS/cmtt/m/n/12 g
  []
 
 
-Overfull \hbox (5.8349pt too wide) in paragraph at lines 207--207
+Overfull \hbox (5.8349pt too wide) in paragraph at lines 209--209
  []\OT1/cmtt/m/n/12 \newtheorem{reduc}{Reduction Rule}\numberwithin{reduc}{sect
 ion}[] 
  []
 
 
-Overfull \hbox (36.70992pt too wide) in paragraph at lines 219--219
+Overfull \hbox (36.70992pt too wide) in paragraph at lines 221--221
  []\OT1/cmtt/m/n/12 \algdef{S}[FOR]{ForEach}[1]{\algorithmicforeach\ #1\ \algor
 ithmicdo}[] 
  []
 
 
-Overfull \hbox (864.16032pt too wide) in paragraph at lines 230--230
+Overfull \hbox (864.16032pt too wide) in paragraph at lines 232--232
  []  \OT1/cmtt/m/n/12 \caption{An algorithm for finding a dominating clique~$S$
 . Vertex~$v_i$ is the first vertex of the dominating clique~$S$ in the fixed cl
 osure ordering~$\sigma$ of~$G$. Initially we have~$T:=\{v_i\}$.}[] 
  []
 
 
-Overfull \hbox (277.53503pt too wide) in paragraph at lines 234--234
+Overfull \hbox (277.53503pt too wide) in paragraph at lines 236--236
  []  \OT1/cmtt/m/n/12 \State \algorithmicif\ $k=0$ \AND~$V(G)\neq N[T]$ \algori
 thmicthen\ \Return No \label{line-cdc-return-no}[] 
  []
 
 
-Overfull \hbox (160.20998pt too wide) in paragraph at lines 235--235
+Overfull \hbox (160.20998pt too wide) in paragraph at lines 237--237
  []  \OT1/cmtt/m/n/12 \State \algorithmicif\ $V(G) = N[T]$ \algorithmicthen\ \R
 eturn Yes\label{line-cdc-yes}[] 
  []
 
 
-Overfull \hbox (147.85997pt too wide) in paragraph at lines 236--236
+Overfull \hbox (147.85997pt too wide) in paragraph at lines 238--238
  []  \OT1/cmtt/m/n/12 \State Compute a vertex~$w$ such that~$v_iw\notin E(G)$ \
 label{line-cdc-compute-v-j}[] 
  []
 
 
-Overfull \hbox (376.33508pt too wide) in paragraph at lines 237--237
+Overfull \hbox (376.33508pt too wide) in paragraph at lines 239--239
  []  \OT1/cmtt/m/n/12 \ForEach{$u\in \bigcap_{x\in T}N(x)\cap N(w)\cap V(G_i)$}
  \label{line-cdc-branch1} \Comment {$G_i:=G[v_i, \ldots , v_n]$}[] 
  []
 
 
-Overfull \hbox (604.8102pt too wide) in paragraph at lines 238--238
+Overfull \hbox (604.8102pt too wide) in paragraph at lines 240--240
  []     \OT1/cmtt/m/n/12 \State \algorithmicif\ \textit{SolveDC}$(G - (N(u)\set
 minus N[v_i]), k - 1, T\cup\{u\})$ returns Yes \algorithmicthen\ \Return Yes \l
 abel{line-cdc-branch2}[] 
@@ -1123,38 +1123,38 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [3]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 246.
+put line 248.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/scit' undefined
-(Font)              using `OT1/cmr/m/it' instead on input line 249.
+(Font)              using `OT1/cmr/m/it' instead on input line 251.
 
 
-Overfull \hbox (10.57541pt too wide) in paragraph at lines 279--279
+Overfull \hbox (10.57541pt too wide) in paragraph at lines 281--281
  []    \OT1/cmtt/m/n/10.95 \draw[->, line width=2.5pt] (a) edge  node[right] {$
 6$} (b);[] 
  []
 
 
-Overfull \hbox (56.56491pt too wide) in paragraph at lines 280--280
+Overfull \hbox (56.56491pt too wide) in paragraph at lines 282--282
  []    \OT1/cmtt/m/n/10.95 \draw[->, line width=1pt,bend left] (a) edge  node[a
 bove] {$2$} (c);[] 
  []
 
 
-Overfull \hbox (62.3136pt too wide) in paragraph at lines 281--281
+Overfull \hbox (62.3136pt too wide) in paragraph at lines 283--283
  []    \OT1/cmtt/m/n/10.95 \draw[->, line width=1pt, bend right] (a) edge  node
 [left] {$6$} (d);[] 
  []
 
 
-Overfull \hbox (10.57541pt too wide) in paragraph at lines 282--282
+Overfull \hbox (10.57541pt too wide) in paragraph at lines 284--284
  []    \OT1/cmtt/m/n/10.95 \draw[->, line width=2.5pt] (b) edge  node[above] {$
 1$} (d);[] 
  []
 
 
-Overfull \hbox (4.82672pt too wide) in paragraph at lines 283--283
+Overfull \hbox (4.82672pt too wide) in paragraph at lines 285--285
  []    \OT1/cmtt/m/n/10.95 \draw[->, line width=2.5pt] (b) edge  node[left] {$2
 $} (e);[] 
  []
@@ -1167,18 +1167,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[4]
-Overfull \hbox (8.73495pt too wide) in paragraph at lines 321--322
+[4] (abschlussarbeiten-vorlage.bbl
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \begin{thebibliography}{1}
+                              
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+)
+Overfull \hbox (8.73495pt too wide) in paragraph at lines 326--327
 []\OT1/cmr/m/n/12 Die wich-tigs-ten Li-te-ra-tur-da-ten-ban-ken f[]ur uns sind 
 DBLP und Goo-gle Scholar. 
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
-340.
+345.
 (C:\Program Files\MiKTeX 2.9\tex/latex/base\ts1cmtt.fd
 File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Overfull \hbox (0.9063pt too wide) in paragraph at lines 340--341
+Overfull \hbox (0.9063pt too wide) in paragraph at lines 345--346
 \OT1/cmtt/m/n/12 title = \OMS/cmtt/m/n/12 f\OT1/cmtt/m/n/12 An \TS1/cmtt/m/n/12
  $\OMS/cmtt/m/n/12 f\OT1/cmtt/m/n/12 O(\OMS/cmtt/m/n/12 n\OT1/cmtt/m/n/12 sqrt\
 OMS/cmtt/m/n/12 f\OT1/cmtt/m/n/12 |V|\OMS/cmtt/m/n/12 g\OT1/cmtt/m/n/12 |E|)\OM
@@ -1186,7 +1199,7 @@ S/cmtt/m/n/12 g\TS1/cmtt/m/n/12 $ \OT1/cmtt/m/n/12 Algorithm for Finding
  []
 
 
-Overfull \hbox (14.13426pt too wide) in paragraph at lines 340--341
+Overfull \hbox (14.13426pt too wide) in paragraph at lines 345--346
 \OT1/cmtt/m/n/12 booktitle = \OMS/cmtt/m/n/12 f\OT1/cmtt/m/n/12 Proceedings of 
 the 21st Annual Symposium on
  []
@@ -1204,7 +1217,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.341   \end{quote}
+l.346   \end{quote}
                    ]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1223,10 +1236,10 @@ ed.
 (rerunfilecheck)             Checksum: 0F1E3D7A6B7784F13CEF37A45783B508;1729.
  ) 
 Here is how much of TeX's memory you used:
- 25813 strings out of 475351
- 464735 string characters out of 2783508
- 833722 words of memory out of 3000000
- 46686 multiletter control sequences out of 15000+600000
+ 25827 strings out of 475351
+ 465093 string characters out of 2783508
+ 834764 words of memory out of 3000000
+ 46695 multiletter control sequences out of 15000+600000
  478214 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  115i,11n,118p,1437b,921s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -1245,9 +1258,9 @@ ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 msfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt1
 2.pfb>
-Output written on abschlussarbeiten-vorlage.pdf (10 pages, 203411 bytes).
+Output written on abschlussarbeiten-vorlage.pdf (10 pages, 204632 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
+ 200 PDF objects out of 1000 (max. 8388607)
+ 29 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
